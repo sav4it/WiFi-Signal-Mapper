@@ -56,4 +56,4 @@ A list of possible commands:
 ## 6. Demos
 ![Wifi Scanning demo](images/wifi_scan_.png)
 ![RSSI gathering demo](images/rssi_screenshot_.png)
-![Throughput measurement demo](images/throughput.png)
+![Throughput measurement demo](images/throuput.png)
