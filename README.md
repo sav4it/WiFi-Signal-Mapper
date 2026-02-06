@@ -23,7 +23,7 @@ Runs out of the box.
 * Wi-Fi
 
 The code was built using Espressif's ***ESP-IDF*** pipeline. It depends on default ESP32 libraries and ***FreeRTOS***.
-The _server_ directory contains the code that must be flashed to an ESP32 board.
+The server directory contains the code that must be flashed to an ESP32 board.
 To build with ESP-IDF use the following command:
 ``` cd Probe```
 ``` idf.py build```
@@ -36,17 +36,17 @@ For more info on using ESP-IDF visit their [dedicated guide](https://docs.espres
 4. Wait for the command prompt to appear
 
 A list of possible commands:
-``` SCAN_ONCE ``` – scans for 10 Wi-Fi networks and prints their SSID with RSSI 
-``` SCAN_START ``` – start performing ```SCAN_ONCE``` with an interval of roughly 6 seconds.
-``` SCAN_STOP ``` – stop continuous scanning.
-``` CONNECT <SSDI> <PASSWORD> ``` - connect esp32 device to the provided Wi-Fi network. This command is **necessary** to enable **RSSI gathering and throughput** measurement. The credentials are sent via a protected link.
-``` DISCONNECT ``` – disconnect from Wi-Fi.
-``` RSSI_ONCE ``` – acquire the RSSI of the network, ***which the probe is connected to***.
-``` RSSI_START ``` – start performing ```RSSI_ONCE``` with intervals of roughly 2 seconds.
-``` RSSI_STOP ``` – stop continuous RSSI acquisition.
-``` TCP_THROUGHPUT <IP> <PORT> <DURATION> ``` - start TCP throughput measurement of the network ***which both the probe and the station are connected to***. IP = address of the **station**, PORT = port which the **station** should listen to, DURATION must be in seconds. 
-``` UDP_THROUGHPUT <IP> <PORT> <DURATION> ``` - same as TCP_THROUGHPUT but with UDP.
-``` EXIT ``` – finish the client program. 
+``` SCAN_ONCE ``` – scans for 10 Wi-Fi networks and prints their SSID with RSSI.\
+``` SCAN_START ``` – start performing ```SCAN_ONCE``` with an interval of roughly 6 seconds.\
+``` SCAN_STOP ``` – stop continuous scanning.\
+``` CONNECT <SSDI> <PASSWORD> ``` - connect esp32 device to the provided Wi-Fi network. This command is **necessary** to enable **RSSI gathering and throughput** measurement. The credentials are sent via a protected link.\
+``` DISCONNECT ``` – disconnect from Wi-Fi.\
+``` RSSI_ONCE ``` – acquire the RSSI of the network, ***which the probe is connected to***.\
+``` RSSI_START ``` – start performing ```RSSI_ONCE``` with intervals of roughly 2 seconds.\
+``` RSSI_STOP ``` – stop continuous RSSI acquisition.\
+``` TCP_THROUGHPUT <IP> <PORT> <DURATION> ``` - start TCP throughput measurement of the network ***which both the probe and the station are connected to***. IP = address of the **station**, PORT = port which the **station** should listen to, DURATION must be in seconds.\ 
+``` UDP_THROUGHPUT <IP> <PORT> <DURATION> ``` - same as TCP_THROUGHPUT but with UDP.\
+``` EXIT ``` – finish the client program.\
 
 ## 5. In case of troubles...
 * If the connection abruptly ends, try restarting both the client and the server.
